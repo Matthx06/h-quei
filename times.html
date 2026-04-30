@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times | Ice Hockey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-snow2 me-2"></i>ICE HOCKEY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogadores.html">Jogadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Times da NHL</h1>
+            <p class="page-subtitle">32 franquias, infinitas histórias</p>
+        </div>
+    </section>
+
+    <!-- Division Filter -->
+    <section class="filter-section py-4">
+        <div class="container">
+            <div class="filter-buttons text-center">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="atlantic">Atlântico</button>
+                <button class="filter-btn" data-filter="metropolitan">Metropolitana</button>
+                <button class="filter-btn" data-filter="central">Central</button>
+                <button class="filter-btn" data-filter="pacific">Pacífico</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Grid -->
+    <section class="teams-section py-5">
+        <div class="container">
+            <div class="row g-4" id="teamsGrid">
+                <!-- Atlantic Division -->
+                <div class="col-lg-4 col-md-6 team-item" data-division="atlantic">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #AF1E2D, #192168);">
+                            <span class="team-number">01</span>
+                            <h3>Montreal Canadiens</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1909</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">24</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Bell Centre</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                O time mais vitorioso da história da NHL, os Canadiens são sinônimo de excelência no hockey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="atlantic">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #00205B, #fff);">
+                            <span class="team-number">02</span>
+                            <h3>Toronto Maple Leafs</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1917</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">13</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Scotiabank Arena</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Uma das franquias mais valiosas do esporte, com uma base de fãs apaixonada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="atlantic">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #FFB81C, #000);">
+                            <span class="team-number">03</span>
+                            <h3>Boston Bruins</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1924</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">6</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">TD Garden</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Conhecidos pela intensidade física e estilo agressivo de jogo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metropolitan Division -->
+                <div class="col-lg-4 col-md-6 team-item" data-division="metropolitan">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #CE1126, #041E42);">
+                            <span class="team-number">04</span>
+                            <h3>New York Rangers</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1926</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">4</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Madison Square Garden</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                A Broadway do hockey, jogando no icônico MSG em Manhattan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="metropolitan">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #FCB514, #000);">
+                            <span class="team-number">05</span>
+                            <h3>Pittsburgh Penguins</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1967</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">5</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">PPG Paints Arena</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Casa de lendas como Mario Lemieux e Sidney Crosby.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="metropolitan">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #C8102E, #000);">
+                            <span class="team-number">06</span>
+                            <h3>Washington Capitals</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1974</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">1</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Capital One Arena</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Liderados por Alex Ovechkin, o maior artilheiro da história.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Central Division -->
+                <div class="col-lg-4 col-md-6 team-item" data-division="central">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #CE1126, #fff);">
+                            <span class="team-number">07</span>
+                            <h3>Detroit Red Wings</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1926</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">11</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Little Caesars Arena</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Hockeytown USA - uma das franquias mais tradicionais da liga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="central">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #CF0A2C, #002D62);">
+                            <span class="team-number">08</span>
+                            <h3>Colorado Avalanche</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1995</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">3</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Ball Arena</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Campeões mais recentes em 2022, com um elenco estelar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="central">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #CF0A2C, #000);">
+                            <span class="team-number">09</span>
+                            <h3>Chicago Blackhawks</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1926</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">6</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">United Center</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Dinastia dos anos 2010 com três títulos em seis anos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pacific Division -->
+                <div class="col-lg-4 col-md-6 team-item" data-division="pacific">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #F47A38, #000);">
+                            <span class="team-number">10</span>
+                            <h3>Edmonton Oilers</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1979</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">5</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">Rogers Place</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Casa de Connor McDavid, considerado o melhor jogador do mundo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="pacific">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #006D75, #111);">
+                            <span class="team-number">11</span>
+                            <h3>San Jose Sharks</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">1991</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">0</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">SAP Center</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                Conhecidos pelo "Shark Tank" e entrada icônica com a cabeça de tubarão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 team-item" data-division="pacific">
+                    <div class="team-card-full">
+                        <div class="team-header" style="background: linear-gradient(135deg, #B4975A, #333F48);">
+                            <span class="team-number">12</span>
+                            <h3>Vegas Golden Knights</h3>
+                        </div>
+                        <div class="team-body">
+                            <div class="team-info">
+                                <div class="info-item">
+                                    <span class="info-label">Fundação</span>
+                                    <span class="info-value">2017</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Stanley Cups</span>
+                                    <span class="info-value highlight">1</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arena</span>
+                                    <span class="info-value">T-Mobile Arena</span>
+                                </div>
+                            </div>
+                            <p class="team-description">
+                                A mais nova sensação da NHL, campeões em 2023.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <span class="stat-big-number" data-target="32">0</span>
+                        <span class="stat-title">Times</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <span class="stat-big-number" data-target="107">0</span>
+                        <span class="stat-title">Anos de História</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <span class="stat-big-number" data-target="700">0</span>
+                        <span class="stat-title">Jogadores Ativos</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <span class="stat-big-number" data-target="82">0</span>
+                        <span class="stat-title">Jogos por Temporada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-snow2 me-2"></i>ICE HOCKEY</h5>
+                    <p>O esporte mais rápido e emocionante do mundo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="times.html">Times</a></li>
+                        <li><a href="jogadores.html">Jogadores</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Ice Hockey. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

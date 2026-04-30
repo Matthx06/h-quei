@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores | Ice Hockey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-snow2 me-2"></i>ICE HOCKEY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="jogadores.html">Jogadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header players-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Lendas do Gelo</h1>
+            <p class="page-subtitle">Os atletas que definem o esporte</p>
+        </div>
+    </section>
+
+    <!-- Featured Player -->
+    <section class="featured-player py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="featured-image-container">
+                        <img src="images/player1.jpg" alt="Jogador Destaque" class="featured-image">
+                        <div class="featured-badge">
+                            <span>MVP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="featured-content">
+                        <span class="featured-label">Jogador em Destaque</span>
+                        <h2 class="featured-name">Connor McDavid</h2>
+                        <p class="featured-team">Edmonton Oilers • #97</p>
+                        <p class="featured-description">
+                            Considerado o melhor jogador do mundo atualmente, McDavid combina 
+                            velocidade sobrenatural com habilidade técnica incomparável. 
+                            Capitão dos Oilers desde os 19 anos.
+                        </p>
+                        <div class="featured-stats">
+                            <div class="f-stat">
+                                <span class="f-stat-value">153</span>
+                                <span class="f-stat-label">Pontos (2022-23)</span>
+                            </div>
+                            <div class="f-stat">
+                                <span class="f-stat-value">4x</span>
+                                <span class="f-stat-label">MVP da Liga</span>
+                            </div>
+                            <div class="f-stat">
+                                <span class="f-stat-value">5x</span>
+                                <span class="f-stat-label">Art Ross Trophy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Grid -->
+    <section class="players-section py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white text-center mb-5">Estrelas Atuais</h2>
+            <div class="row g-4">
+                <!-- Player Cards -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="player-card">
+                        <div class="player-image">
+                            <img src="images/player2.jpg" alt="Alex Ovechkin">
+                            <div class="player-number">#8</div>
+                        </div>
+                        <div class="player-info">
+                            <h4>Alex Ovechkin</h4>
+                            <p class="player-team">Washington Capitals</p>
+                            <div class="player-position">Ala Esquerdo</div>
+                            <div class="player-stats-mini">
+                                <span><i class="bi bi-bullseye"></i> 868 Gols</span>
+                            </div>
+                        </div>
+                        <div class="player-hover">
+                            <p>O maior artilheiro da história da NHL, perseguindo o recorde de Wayne Gretzky.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="player-card">
+                        <div class="player-image">
+                            <img src="images/player1.jpg" alt="Sidney Crosby">
+                            <div class="player-number">#87</div>
+                        </div>
+                        <div class="player-info">
+                            <h4>Sidney Crosby</h4>
+                            <p class="player-team">Pittsburgh Penguins</p>
+                            <div class="player-position">Centro</div>
+                            <div class="player-stats-mini">
+                                <span><i class="bi bi-trophy"></i> 3x Campeão</span>
+                            </div>
+                        </div>
+                        <div class="player-hover">
+                            <p>"Sid the Kid" - um dos jogadores mais completos de sua geração.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="player-card">
+                        <div class="player-image">
+                            <img src="images/player2.jpg" alt="Nathan MacKinnon">
+                            <div class="player-number">#29</div>
+                        </div>
+                        <div class="player-info">
+                            <h4>Nathan MacKinnon</h4>
+                            <p class="player-team">Colorado Avalanche</p>
+                            <div class="player-position">Centro</div>
+                            <div class="player-stats-mini">
+                                <span><i class="bi bi-trophy"></i> Campeão 2022</span>
+                            </div>
+                        </div>
+                        <div class="player-hover">
+                            <p>Motor do Avalanche, levou o time ao título em 2022.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="player-card">
+                        <div class="player-image">
+                            <img src="images/player1.jpg" alt="Auston Matthews">
+                            <div class="player-number">#34</div>
+                        </div>
+                        <div class="player-info">
+                            <h4>Auston Matthews</h4>
+                            <p class="player-team">Toronto Maple Leafs</p>
+                            <div class="player-position">Centro</div>
+                            <div class="player-stats-mini">
+                                <span><i class="bi bi-bullseye"></i> 69 Gols (23-24)</span>
+                            </div>
+                        </div>
+                        <div class="player-hover">
+                            <p>O artilheiro mais letal da atualidade, primeiro americano a marcar 60+ gols.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legends Section -->
+    <section class="legends-section py-5">
+        <div class="container">
+            <h2 class="section-title-dark text-center mb-5">Hall da Fama</h2>
+            <div class="legends-carousel">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="legend-card">
+                            <div class="legend-content">
+                                <div class="legend-icon">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Wayne Gretzky</h3>
+                                <p class="legend-nickname">"The Great One"</p>
+                                <div class="legend-stats">
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">894</span>
+                                        <span class="l-stat-label">Gols</span>
+                                    </div>
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">1963</span>
+                                        <span class="l-stat-label">Assistências</span>
+                                    </div>
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">2857</span>
+                                        <span class="l-stat-label">Pontos</span>
+                                    </div>
+                                </div>
+                                <p class="legend-description">
+                                    O maior jogador de todos os tempos. Seus recordes são considerados imbatíveis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="legend-card">
+                            <div class="legend-content">
+                                <div class="legend-icon">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Mario Lemieux</h3>
+                                <p class="legend-nickname">"Super Mario"</p>
+                                <div class="legend-stats">
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">690</span>
+                                        <span class="l-stat-label">Gols</span>
+                                    </div>
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">1033</span>
+                                        <span class="l-stat-label">Assistências</span>
+                                    </div>
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">1723</span>
+                                        <span class="l-stat-label">Pontos</span>
+                                    </div>
+                                </div>
+                                <p class="legend-description">
+                                    O jogador mais talentoso de sua era, superou um câncer para voltar ao gelo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="legend-card">
+                            <div class="legend-content">
+                                <div class="legend-icon">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Bobby Orr</h3>
+                                <p class="legend-nickname">"Number Four"</p>
+                                <div class="legend-stats">
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">270</span>
+                                        <span class="l-stat-label">Gols</span>
+                                    </div>
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">645</span>
+                                        <span class="l-stat-label">Assistências</span>
+                                    </div>
+                                    <div class="l-stat">
+                                        <span class="l-stat-value">8x</span>
+                                        <span class="l-stat-label">Norris Trophy</span>
+                                    </div>
+                                </div>
+                                <p class="legend-description">
+                                    Revolucionou a posição de defensor, considerado o melhor de todos os tempos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positions Section -->
+    <section class="positions-section py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white text-center mb-5">Posições no Hockey</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="position-card" data-position="forward">
+                        <div class="position-icon">
+                            <i class="bi bi-arrow-up-circle-fill"></i>
+                        </div>
+                        <h3>Atacantes</h3>
+                        <p>Centro, Ala Direita e Ala Esquerda. Responsáveis por marcar gols e criar jogadas ofensivas.</p>
+                        <div class="position-skills">
+                            <span>Velocidade</span>
+                            <span>Finalização</span>
+                            <span>Visão de jogo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="position-card" data-position="defense">
+                        <div class="position-icon">
+                            <i class="bi bi-shield-fill"></i>
+                        </div>
+                        <h3>Defensores</h3>
+                        <p>Dois jogadores que protegem o goleiro e iniciam as transições ofensivas.</p>
+                        <div class="position-skills">
+                            <span>Físico</span>
+                            <span>Posicionamento</span>
+                            <span>Passe longo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="position-card" data-position="goalie">
+                        <div class="position-icon">
+                            <i class="bi bi-person-fill-lock"></i>
+                        </div>
+                        <h3>Goleiro</h3>
+                        <p>A última linha de defesa. Usa equipamento especial e não pode ser substituído em jogo.</p>
+                        <div class="position-skills">
+                            <span>Reflexos</span>
+                            <span>Flexibilidade</span>
+                            <span>Concentração</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Stats -->
+    <section class="interactive-stats py-5">
+        <div class="container">
+            <h2 class="section-title-dark text-center mb-5">Compare os Números</h2>
+            <div class="comparison-container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="comparison-player" id="player1">
+                            <h4>Wayne Gretzky</h4>
+                            <div class="comparison-bar">
+                                <div class="bar-fill" data-value="2857" style="width: 100%;"></div>
+                                <span class="bar-label">2857 Pontos</span>
+                            </div>
+                            <div class="comparison-bar">
+                                <div class="bar-fill" data-value="894" style="width: 100%;"></div>
+                                <span class="bar-label">894 Gols</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div class="vs-badge">VS</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="comparison-player" id="player2">
+                            <h4>Alex Ovechkin</h4>
+                            <div class="comparison-bar">
+                                <div class="bar-fill active" data-value="1550" style="width: 54%;"></div>
+                                <span class="bar-label">1550 Pontos</span>
+                            </div>
+                            <div class="comparison-bar">
+                                <div class="bar-fill active" data-value="868" style="width: 97%;"></div>
+                                <span class="bar-label">868 Gols</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-snow2 me-2"></i>ICE HOCKEY</h5>
+                    <p>O esporte mais rápido e emocionante do mundo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="times.html">Times</a></li>
+                        <li><a href="jogadores.html">Jogadores</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Ice Hockey. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
